@@ -38,45 +38,41 @@
 
       <form class="survey" action="https://echo.htmlacademy.ru" method="post">
         <div class="survey__info">
-          <div class="survey__common">
-            <fieldset class="survey__common-field">
+          <fieldset class="survey__info-common">
+            <div>
+              <label for="name">Имя:*</label>
               <div>
-                <label for="name">Имя:*</label>
-                <div>
-                  <input type="text" id="name" placeholder="Барсик">
-                </div>
+                <input type="text" id="name" placeholder="Барсик">
               </div>
+            </div>
+            <div>
+              <label for="weight">Вес (кг):*</label>
               <div>
-                <label for="weight">Вес (кг):*</label>
-                <div>
-                  <input type="text" id="weight" placeholder="7">
-                </div>
+                <input type="text" id="weight" placeholder="7">
               </div>
+            </div>
+            <div>
+              <label for="age">Возраст (лет):</label>
               <div>
-                <label for="age">Возраст (лет):</label>
-                <div>
-                  <input type="text" id="age" placeholder="7">
-                </div>
+                <input type="text" id="age" placeholder="7">
               </div>
-            </fieldset>
-          </div>
+            </div>
+          </fieldset>
 
-          <div class="survey__programs">
-            <fieldset class="survey__programs-field">
-              <div>
-                <input type="radio" name="program" id="slim" checked>
-                <label for="slim">Похудение</label>
-              </div>
-              <div>
-                <input type="radio" name="program" id="set">
-                <label for="set">Набор массы</label>
-              </div>
-              <div>
-                <input type="radio" name="program" id="advice">
-                <label for="advice">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="survey__info-programs">
+            <div>
+              <input type="radio" name="program" id="slim" checked>
+              <label for="slim">Похудение</label>
+            </div>
+            <div>
+              <input type="radio" name="program" id="set">
+              <label for="set">Набор массы</label>
+            </div>
+            <div>
+              <input type="radio" name="program" id="advice">
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </fieldset>
         </div>
 
         <fieldset class="survey__cell">
