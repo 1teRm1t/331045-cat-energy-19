@@ -1,0 +1,95 @@
+.extras__heading-wrap {
+  padding: 30px 0;
+}
+
+.extras__heading {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: $black-main;
+}
+
+.goods {
+  margin-bottom: 38px;
+}
+
+.goods-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.goods-item {
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  &:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+
+.goods-title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $black-lightly;
+}
+
+.goods__text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.gift {
+  margin-bottom: 35px;
+}
+
+.gift__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 280px;
+  min-height: 289px;
+
+  text-align: center;
+
+  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-color: $green;
+}
+
+.gift__wrap svg {
+  padding-top: 30px;
+
+  fill: $white;
+}
+
+.gift__text {
+  margin: 0;
+  width: 159px;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $white;
+}

@@ -1,0 +1,39 @@
+.contacts--backdrop {
+  background-color: $grey-back;
+}
+
+.invite {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.invite__title {
+  margin: 0;
+  min-width: 145px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $black-main;
+}
+
+
+.invite__text {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 362px;
+  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
