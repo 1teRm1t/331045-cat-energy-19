@@ -1,0 +1,36 @@
+.page-main__content {
+  padding-top: 29px;
+
+  text-align: center;
+
+  color: $white;
+}
+
+.page-main__content-wrap {
+  margin-bottom: 20px;
+}
+
+.page-main__content-title {
+  margin: 0;
+  padding-bottom: 19px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-main__content-desc {
+  margin: 0;
+  padding-bottom: 29px;
+
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.page-main__img {
+  padding-bottom: 3px;
+}
+
+.btn--small {
+  font-size: 14px;
+}
