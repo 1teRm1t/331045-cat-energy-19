@@ -43,25 +43,25 @@
 }
 
 .manual__item--leaf::before {
-  background-image: url(../../img/advantage-leaf@1x.png);
+  background-image: url(../img/advantage-leaf@1x.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .manual__item--powder::before {
-  background-image: url(../../img/advantage-powder@1x.png);
+  background-image: url(../img/advantage-powder@1x.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .manual__item--dining::before {
-  background-image: url(../../img/advantage-dining@1x.png);
+  background-image: url(../img/advantage-dining@1x.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .manual__item--clock::before {
-  background-image: url(../../img/advantage-clock@1x.png);
+  background-image: url(../img/advantage-clock@1x.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -70,4 +70,94 @@
   margin: 0;
 
   font-family: Arial, sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .manual-wrap {
+    margin-bottom: 0;
+  }
+
+  .manual__title {
+    padding-bottom: 60px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    color: $black-main;
+  }
+
+  .manual__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    counter-reset: item;
+  }
+
+  .manual__item {
+    width: 324px;
+    min-height: 230px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .manual__item:nth-child(1),
+  .manual__item:nth-child(2) {
+    margin-bottom: 85px;
+  }
+
+  .manual__item:nth-last-child(1),
+  .manual__item:nth-last-child(2) {
+    margin-bottom: 55px;
+  }
+
+  .manual__item::before {
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+  }
+
+  .manual__item::after {
+    counter-increment: item;
+    content: counter(item) "";
+    position: absolute;
+
+    top: 92px;
+    left: 117px;
+
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 280px;
+
+    color: $grey-back;
+    z-index: -1;
+  }
+
+  .manual__text {
+    max-width: 245px;
+    padding-top: 115px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manual__list {
+    margin-bottom: 85px;
+  }
+
+  .manual__item {
+    width: 20%;
+    padding-left: 0;
+  }
+
+  .manual__item:nth-child(1),
+  .manual__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .manual__item:nth-last-child(1),
+  .manual__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
 }

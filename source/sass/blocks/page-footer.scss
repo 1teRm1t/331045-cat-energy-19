@@ -27,15 +27,61 @@
   padding-right: 40px;
 }
 
+.social__link svg {
+  fill: #666666;
+}
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
 
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
 
   color: $grey-brown;
+}
+
+.copyright__link svg {
+  fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .page-footer__logo {
+    padding: 0;
+  }
+
+  .social__list {
+    align-items: center;
+
+    border: none;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .copyright__link {
+    padding: 0;
+  }
 }
