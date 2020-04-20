@@ -119,7 +119,7 @@
   }
 }
 
-.form__input-radio:checked+.form__text--radio::after {
+.form__input-radio:checked + .form__text--radio::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -150,7 +150,7 @@
   }
 }
 
-.form__input-checkbox:checked+.form__text--checkbox::after {
+.form__input-checkbox:checked + .form__text--checkbox::after {
   content: "";
   position: absolute;
   top: -7px;
@@ -213,7 +213,7 @@
 }
 
 .required {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 16px;
   text-transform: none;
 }
