@@ -24,7 +24,7 @@
 .invite__text {
   margin: 0;
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -32,8 +32,34 @@
 .map {
   width: 100%;
   height: 362px;
-  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .invite {
+    padding: 66px 40px 60px 40px;
+  }
+
+  .invite__title {
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invite__desc {
+    max-width: 155px;
+
+    text-align: right;
+  }
+
+  .invite__text {
+    font-size: 16px;
+
+    &:last-child {
+      padding-top: 15px;
+    }
+  }
 }

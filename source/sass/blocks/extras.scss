@@ -52,7 +52,7 @@
   margin: 0;
   margin-bottom: 14px;
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
 }
@@ -72,7 +72,7 @@
 
   text-align: center;
 
-  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $green;
 }
@@ -85,11 +85,139 @@
 
 .gift__text {
   margin: 0;
-  width: 159px;
+  max-width: 161px;
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
 
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .extras__heading-wrap {
+    padding: 45px 0;
+  }
+
+  .extras__heading {
+    padding-left: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .goods {
+    margin-bottom: 69px;
+  }
+
+  .goods-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 27px 36px 25px;
+
+    border: 1px solid #d9d9d9;
+    border-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  .goods-title {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .goods__text {
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .btn--goods {
+    width: 633px;
+  }
+
+  .gift {
+    margin-bottom: 76px;
+  }
+
+  .gift__wrap {
+    flex-direction: row;
+    width: 708px;
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .gift__wrap svg {
+    margin-right: 100px;
+    padding-top: 0;
+  }
+
+  .gift__text {
+    margin-right: 30px;
+    max-width: 161px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extras__heading-wrap {
+    padding: 75px 0;
+  }
+
+  .extras__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gift__wrap {
+    flex-direction: column;
+    width: 245px;
+    min-height: 289px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .goods-list {
+    margin-right: 80px;
+  }
+
+  .goods-item {
+    align-items: center;
+    padding: 15.5px 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .goods-title {
+    margin-bottom: 0;
+  }
+
+  .goods__text {
+    margin-bottom: 0;
+  }
+
+  .btn--goods {
+    width: 245px;
+  }
+
+  .gift__wrap svg {
+    margin-top: 30px;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .gift__text {
+    margin-right: 0;
+
+    text-align: center;
+  }
 }
