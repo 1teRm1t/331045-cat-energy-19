@@ -1,24 +1,27 @@
 .page-header {
   position: relative;
+}
 
-  &--backdrop::after {
-    content: "";
-    position: absolute;
-
-    width: 100%;
-    height: 305px;
-
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-color: #63a73a;
-    background-repeat: no-repeat;
-    background-position: bottom;
-
-    z-index: -1;
-  }
+.page-header__wrap {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo-wrap {
   padding: 10px 55px 15px 0;
+}
+
+.page-header__logo-link {
+  display: block;
+}
+
+.page-header__logo-link:focus,
+.page-header__logo-link[href]:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-link[href]:active,
+.site-list__link[href]:hover {
+  opacity: 0.6;
 }
 
 .page-header__logo {
@@ -105,6 +108,10 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.site-list__link[href]:active {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -134,10 +141,22 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 23px;
+
+    border-bottom: none;
+  }
+
+  .page-header__logo-wrap {
+    padding: 0;
   }
 
   .page-header__logo {
     width: 174px;
+    height: 58px;
+  }
+
+  .main-nav {
+    width: 516px;
   }
 
   .main-nav__toggle {
@@ -146,8 +165,20 @@
 
   .site-list {
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 
-    margin-right: -20px;
+  .site-list__item {
+    padding: 10px 18px 6px;
+
+    &:first-child {
+      padding: 10px 18px 6px 0;
+    }
+
+    &:last-child {
+      padding: 10px 0 6px 18px;
+    }
   }
 
   .site-list__item:last-of-type {
@@ -155,7 +186,7 @@
   }
 
   .site-list__link {
-    padding: 10px 20px;
+    padding: 8px 0 7px;
 
     font-size: 18px;
     line-height: 25px;
@@ -165,24 +196,21 @@
 
     border: none;
 
-    &--active::after {
-      content: "";
-      position: absolute;
-
-      left: 20px;
-      bottom: 0;
-
-      width: calc(100% - 40px);
-      height: 2px;
-
-      background-color: $green;
+    &--active {
+      border-bottom: 2px solid $green;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__inner {
-    padding-top: 53px;
+  .page-header__wrap {
+    padding-top: 52px;
+  }
+
+  .page-header__logo {
+    max-width: 203px;
+    width: 203px;
+    height: 60px;
   }
 
   .page-header--backdrop .site-list__link {
@@ -190,6 +218,9 @@
   }
 
   .page-header--backdrop::after {
+    content: "";
+    position: absolute;
+
     display: block;
     top: 0;
     right: 0;
@@ -197,12 +228,15 @@
     width: 50%;
     min-height: 696px;
 
+    background-color: #63a73a;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: 0 0;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    z-index: -1;
   }
 
-  .page-header--backdrop .site-list__link--active::after {
-    background-color: $white;
+  .page-header--backdrop .site-list__link--active {
+    border-bottom-color: $white;
   }
 }

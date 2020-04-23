@@ -56,7 +56,45 @@
   text-transform: uppercase;
 
   color: $grey-brown;
-  border: 1px solid $grey-border;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: $grey-border;
+  }
+
+  &:focus,
+  &:active {
+    outline: 2px solid $grey-brown;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.form__field:focus ~ .form__field-icon,
+.form__field:active ~ .form__field-icon {
+  fill: $green;
+}
+
+.form__field:focus:invalid ~ .form__field-icon {
+  fill: #ff8282;
+}
+
+.form__field--icon {
+  padding-right: 45px;
+}
+
+.form__field-icon {
+  position: absolute;
+
+  right: 15px;
+
+  fill: $black-lightly;
+
+  &--phone {
+    right: 13px;
+  }
 }
 
 .form__field--comment {
@@ -69,6 +107,8 @@
 }
 
 .survey__box {
+  position: relative;
+
   display: flex;
   align-items: center;
   margin-bottom: 13px;
@@ -132,6 +172,16 @@
   border-radius: 50%;
 }
 
+.form__input-radio + .form__text--radio:hover::before {
+  border-color: #bababa;
+}
+
+.form__input-radio + .form__text--radio:active,
+.form__input-radio + .form__text--radio:active::before {
+  color: rgba(34, 34, 34, 0.3);
+  opacity: 0.3;
+}
+
 .form__text--checkbox {
   position: relative;
   display: block;
@@ -164,6 +214,16 @@
   transform: rotate(45deg);
 }
 
+.form__input-checkbox + .form__text--checkbox:hover::before {
+  border-color: #bababa;
+}
+
+.form__input-checkbox + .form__text--checkbox:active,
+.form__input-checkbox + .form__text--checkbox:active::before {
+  color: rgba(34, 34, 34, 0.3);
+  opacity: 0.3;
+}
+
 .survey__cell {
   margin: 0;
   margin-bottom: 30px;
@@ -192,6 +252,8 @@
 }
 
 .survey__cell-title {
+  position: relative;
+
   padding-bottom: 30px;
 
   font-size: 24px;
@@ -199,6 +261,19 @@
   text-transform: none;
 
   color: $black-main;
+}
+
+.survey__cell-title::after {
+  position: absolute;
+  content: "";
+
+  top: 30%;
+
+  width: 100vw;
+  height: 3px;
+  margin-left: 22px;
+
+  background-color: $green;
 }
 
 .btn--form {
@@ -263,9 +338,34 @@
     line-height: 20px;
   }
 
+  .form__text--checkbox {
+    padding-left: 59px;
+  }
+
+  .form__text--checkbox::before {
+    top: -10px;
+    left: 0;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .form__input-checkbox:checked + .form__text--checkbox::after {
+    top: -5px;
+    left: 14px;
+  }
+
   .form__field {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form__field-icon {
+    right: 20px;
+
+    &--phone {
+      right: 17px;
+    }
   }
 
   .form__field--comment {
@@ -288,6 +388,24 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .survey__cell-title::before {
+    position: absolute;
+    content: "";
+
+    top: 22%;
+    right: 100%;
+
+    width: 100vw;
+    height: 3px;
+    margin-right: 40px;
+
+    background-color: $green;
+  }
+
+  .survey__cell-title::after {
+    top: 22%;
   }
 
   .survey__cell-checkbox-list {
@@ -374,9 +492,21 @@
     flex-basis: 50%;
   }
 
+  .form__field-icon {
+    right: 19px;
+
+    &--phone {
+      right: 19px;
+    }
+  }
+
   .form__field--comment {
     width: 1220px;
     height: 174px;
+  }
+
+  .survey__cell-title::after {
+    margin-left: 40px;
   }
 
   .survey__cell-checkbox-item {

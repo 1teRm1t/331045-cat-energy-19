@@ -47,14 +47,18 @@
 }
 
 .goods__text {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
+  width: 100%;
   margin-bottom: 14px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+
+  border-collapse: collapse;
+}
+
+.goods__text-price {
+  text-align: right;
 }
 
 .gift {
@@ -62,30 +66,37 @@
 }
 
 .gift__wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-  width: 280px;
-  min-height: 289px;
+  padding: 63px 50px 40px;
 
   text-align: center;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $green;
+  background-size: cover;
 }
 
-.gift__wrap svg {
-  padding-top: 30px;
+.gift__wrap::before {
+  position: static;
+  content: "";
 
-  fill: $white;
+  width: 56px;
+  height: 61px;
+
+  background-image: url("../img/gift-svg.png");
+  background-repeat: no-repeat;
 }
 
 .gift__text {
+  max-width: 165px;
   margin: 0;
-  max-width: 161px;
+  margin-top: 65px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -132,6 +143,7 @@
   }
 
   .goods__text {
+    width: 230px;
     margin-bottom: 25px;
 
     font-size: 16px;
@@ -148,20 +160,17 @@
 
   .gift__wrap {
     flex-direction: row;
-    width: 708px;
-    min-height: 200px;
+    flex-wrap: nowrap;
+
+    padding: 67px 125px 72px 91px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
-  .gift__wrap svg {
-    margin-right: 100px;
-    padding-top: 0;
-  }
-
   .gift__text {
-    margin-right: 30px;
     max-width: 161px;
+    margin-left: auto;
+    margin-top: 0;
 
     text-align: left;
   }
@@ -174,18 +183,16 @@
 
   .extras__wrapper {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .gift__wrap {
-    flex-direction: column;
-    width: 245px;
-    min-height: 289px;
-
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  .goods {
+    width: 895px;
   }
 
   .goods-list {
+    width: 100%;
     margin-right: 80px;
   }
 
@@ -198,10 +205,12 @@
   }
 
   .goods-title {
+    width: 245px;
     margin-bottom: 0;
   }
 
   .goods__text {
+    width: 285px;
     margin-bottom: 0;
   }
 
@@ -209,14 +218,16 @@
     width: 245px;
   }
 
-  .gift__wrap svg {
-    margin-top: 30px;
-    margin-right: 0;
-    padding-top: 0;
+  .gift__wrap {
+    flex-direction: column;
+
+    padding: 65px 42px 42px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
   .gift__text {
-    margin-right: 0;
+    padding-top: 61px;
 
     text-align: center;
   }
