@@ -276,6 +276,10 @@
   background-color: $green;
 }
 
+.survey__cell-title--indent::after {
+  margin-left: 45px;
+}
+
 .btn--form {
   border: none;
   cursor: pointer;
