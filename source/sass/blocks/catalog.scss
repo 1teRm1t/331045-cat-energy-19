@@ -125,6 +125,15 @@
 .btn--more {
   color: $grey-brown;
   background-color: $grey-back;
+
+  &:focus,
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -139,21 +148,20 @@
 
   .catalog__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .catalog__item {
+    position: relative;
     width: 324px;
+    padding: 136px 0 40px;
 
     background-color: $grey-back;
     border: none;
 
-    &:nth-child(odd) {
-      margin-right: 60px;
-    }
-
     &:last-child {
-      width: 322px;
+      padding: 0;
 
       background-color: transparent;
       border-bottom: none;
@@ -164,6 +172,11 @@
   .product {
     flex-direction: column;
     align-items: center;
+  }
+
+  .product__img {
+    position: absolute;
+    top: 0;
   }
 
   .product__desc {
@@ -197,7 +210,7 @@
   }
 
   .product-more {
-    padding: 170px 0 40px;
+    padding: 170px 37px 40px;
   }
 
   .product-more-icon {
@@ -240,6 +253,10 @@
   }
 
   .btn--catalog {
+    width: 250px;
+  }
+
+  .btn--more {
     width: 250px;
   }
 }

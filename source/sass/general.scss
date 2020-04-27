@@ -9,6 +9,15 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -20,8 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1440px;
-    min-width: 1220px;
-    padding: 0 110px;
+    width: 1220px;
+    padding: 0 40px;
   }
 }
