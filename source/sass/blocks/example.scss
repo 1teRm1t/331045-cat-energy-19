@@ -112,6 +112,10 @@
     line-height: 24px;
   }
 
+  .example__content {
+    margin-bottom: 60px;
+  }
+
   .result__inner {
     display: flex;
     justify-content: space-between;
@@ -182,6 +186,11 @@
     padding-bottom: 65px;
   }
 
+  .example__content-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .example__content {
     margin-bottom: 70px;
   }
@@ -199,6 +208,11 @@
 
   .result {
     margin-bottom: 60px;
+  }
+
+  .result__number,
+  .result__text {
+    background-color: #eaeaea;
   }
 
   .example__cost {
