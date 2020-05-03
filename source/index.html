@@ -49,9 +49,9 @@
           <p class="page-main__content-desc">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="page-main__img" src="img/index-can-mobile@1x.png" alt="">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+          <img class="page-main__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
         </picture>
         <div class="page-main__content-link">
           <a class="btn btn--small" href="form.html">Подобрать программу</a>
@@ -149,56 +149,63 @@
         <div class="example__title-wrap">
           <h2 class="example__title">Живой пример</h2>
         </div>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-        <section class="example__content">
-          <div class="result__inner">
-            <ul class="result">
-              <li class="result__item">
-                <b class="result__number">5 кг</b>
-                <small class="result__text">снижение веса</small>
-              </li>
-              <li class="result__item">
-                <b class="result__number">60 дней</b>
-                <small class="result__text result__text--small">затрачено времени</small>
-              </li>
-            </ul>
-            <p class="example__cost">
-              <span>Затраты на питание:</span>
-              <span>15 000 руб.</span>
-            </p>
-          </div>
-        </section>
-
-        <div class="slider">
-          <input class="visually-hidden slider__toggle-before" type="radio" name="slider__toggle" id="slider__toggle-before">
-          <input class="visually-hidden slider__toggle-after" type="radio" name="slider__toggle" id="slider__toggle-after">
-          <div class="slider__images">
-            <div class="slider__image slider__images--before">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="slider__pic" src="img/before-mobile@1x.png" alt="">
-              </picture>
-            </div>
-            <div class="slider__image slider__images--after">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="slider__pic" src="img/after-mobile@1x.png" alt="">
-              </picture>
-            </div>
-          </div>
-          <div class="slider__switches">
-            <label class="slider__switch" for="slider__toggle-before">Было</label>
-            <div class="slider__range">
-              <div class="slider__scale">
-                <div class="slider__crossbar"></div>
+        <div class="example__content-wrap">
+          <div>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+              часов в день.</p>
+            <div class="example__content">
+              <div class="result__inner">
+                <ul class="result">
+                  <li class="result__item">
+                    <b class="result__number">5 кг</b>
+                    <small class="result__text">снижение веса</small>
+                  </li>
+                  <li class="result__item">
+                    <b class="result__number">60 дней</b>
+                    <small class="result__text result__text--small">затрачено времени</small>
+                  </li>
+                </ul>
+                <p class="example__cost">
+                  <span>Затраты на питание:</span>
+                  <span>15 000 руб.</span>
+                </p>
               </div>
-              <div class="slider__range-toggle"></div>
             </div>
-            <label class="slider__switch" for="slider__toggle-after">Стало</label>
+          </div>
+
+          <div class="slider">
+            <input class="visually-hidden slider__toggle-before" type="radio" name="slider__toggle"
+              id="slider__toggle-before">
+            <input class="visually-hidden slider__toggle-after" type="radio" name="slider__toggle"
+              id="slider__toggle-after">
+            <div class="slider__images">
+              <div class="slider__image slider__images--before">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="slider__pic" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="">
+                </picture>
+              </div>
+              <div class="slider__image slider__images--after">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="slider__pic" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__switches">
+              <label class="slider__switch" for="slider__toggle-before">Было</label>
+              <div class="slider__range">
+                <div class="slider__scale">
+                  <div class="slider__crossbar"></div>
+                </div>
+                <div class="slider__range-toggle"></div>
+              </div>
+              <label class="slider__switch" for="slider__toggle-after">Стало</label>
+            </div>
           </div>
         </div>
       </div>
@@ -272,6 +279,7 @@
     </div>
   </footer>
 
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/main.js"></script>
 
 </body>
