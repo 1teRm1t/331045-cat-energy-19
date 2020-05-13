@@ -20,6 +20,10 @@
   }
 }
 
+.page-main {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     min-width: 708px;

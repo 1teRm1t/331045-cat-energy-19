@@ -2,15 +2,15 @@
   background-color: $grey-back;
 }
 
-.invite {
+.contacts__invite {
   display: flex;
   padding-top: 30px;
   padding-bottom: 24px;
 }
 
-.invite__title {
+.contacts__invite-title {
   margin: 0;
-  min-width: 145px;
+  min-width: 140px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -19,8 +19,7 @@
   color: $black-main;
 }
 
-
-.invite__text {
+.contacts__invite-text {
   margin: 0;
 
   font-family: "Arial", sans-serif;
@@ -28,7 +27,7 @@
   line-height: 20px;
 }
 
-.map {
+.contacts__map {
   position: relative;
 
   width: 100%;
@@ -38,53 +37,62 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  z-index: 1;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
   }
 }
 
-.map::before {
+.contacts__map::before {
   position: absolute;
   content: "";
 
-  top: 38%;
+  top: 39%;
   left: 42%;
 
   width: 55px;
   height: 53px;
+  z-index: -1;
 
   background-image: url("../img/map-pin-png-50.png");
 }
 
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
 @media (min-width: $tablet-width) {
-  .invite {
+  .contacts__invite {
     justify-content: space-between;
 
-    padding: 67px 41px 59px 41px;
+    padding: 64px 41px 58px;
   }
 
-  .invite__title {
+  .contacts__invite-title {
     max-width: 155px;
     font-size: 20px;
     line-height: 25px;
   }
 
-  .invite__desc {
+  .contacts__invite-desc {
     max-width: 155px;
 
     text-align: right;
   }
 
-  .invite__text {
+  .contacts__invite-text {
     font-size: 16px;
 
     &:last-child {
-      padding-top: 15px;
+      padding-top: 19px;
     }
   }
 
-  .map {
+  .contacts__map {
     height: 400px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
@@ -95,11 +103,11 @@
     }
   }
 
-  .map::before {
+  .contacts__map::before {
     position: absolute;
     content: "";
 
-    top: 38%;
+    top: 37%;
     left: 42%;
 
     width: 113px;
@@ -110,22 +118,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .invite {
+  .contacts__invite {
     position: absolute;
 
     width: 404px;
-    margin-top: 95px;
-    padding: 67px 90px 59px 76px;
+    margin-top: 90px;
+    padding: 66px 90px 56px 76px;
 
     background-color: $white;
-    z-index: 1;
+    z-index: 3;
   }
 
-  .invite__desc {
+  .contacts__invite-desc {
     text-align: left;
   }
 
-  .map {
+  .contacts__map {
     height: 400px;
 
     background-image: url("../img/bg-map-desktop@1x.png");
@@ -136,7 +144,8 @@
     }
   }
 
-  .map::before {
-    left: 74%;
+  .contacts__map::before {
+    top: 38%;
+    left: 71%;
   }
 }
