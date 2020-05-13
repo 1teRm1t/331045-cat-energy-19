@@ -1,8 +1,14 @@
+.extras--wrap {
+  margin-bottom: 35px;
+}
+
 .extras__heading-wrap {
-  padding: 30px 0;
+  padding: 7px 0;
+  margin-bottom: 26px;
 }
 
 .extras__heading {
+  position: relative;
   margin: 0;
 
   font-size: 24px;
@@ -12,18 +18,31 @@
   color: $black-main;
 }
 
-.goods {
+.extras__heading::after {
+  position: absolute;
+  content: "";
+
+  top: 15px;
+
+  width: 100vw;
+  height: 3px;
+  margin-left: 22px;
+
+  background-color: $green;
+}
+
+.extras__goods {
   margin-bottom: 38px;
 }
 
-.goods-list {
+.extras__goods-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.goods-item {
+.extras__goods-item {
   padding-top: 14px;
   padding-bottom: 16px;
 
@@ -34,9 +53,9 @@
   }
 }
 
-.goods-title {
+.extras__goods-item-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
   font-size: 16px;
   line-height: 16px;
@@ -46,7 +65,7 @@
   color: $black-lightly;
 }
 
-.goods__text {
+.extras__goods-item-text {
   width: 100%;
   margin-bottom: 14px;
 
@@ -57,15 +76,11 @@
   border-collapse: collapse;
 }
 
-.goods__text-price {
+.extras__goods-item-text-price {
   text-align: right;
 }
 
-.gift {
-  margin-bottom: 35px;
-}
-
-.gift__wrap {
+.extras__gift-wrap {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -86,7 +101,7 @@
   }
 }
 
-.gift__wrap::before {
+.extras__gift-wrap::before {
   position: static;
   content: "";
 
@@ -97,7 +112,7 @@
   background-repeat: no-repeat;
 }
 
-.gift__text {
+.extras__gift-text {
   max-width: 165px;
   margin: 0;
   margin-top: 65px;
@@ -110,8 +125,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extras--wrap {
+    margin-bottom: 75px;
+  }
+
   .extras__heading-wrap {
-    padding: 45px 0;
+    margin-bottom: 44px;
+    padding: 35px 0;
   }
 
   .extras__heading {
@@ -121,15 +141,34 @@
     line-height: 36px;
   }
 
-  .goods {
+  .extras__heading::before {
+    position: absolute;
+    content: "";
+
+    top: 22px;
+    right: 100%;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: $green;
+  }
+
+  .extras__heading::after {
+    top: 22px;
+
+    margin-left: 34px;
+  }
+
+  .extras__goods {
     margin-bottom: 69px;
   }
 
-  .goods-item {
+  .extras__goods-item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 27px 36px 25px;
+    padding: 26px 37px 27px;
 
     border: 1px solid #d9d9d9;
     border-bottom: 0;
@@ -139,30 +178,34 @@
     }
   }
 
-  .goods-title {
-    margin-bottom: 25px;
+  .extras__goods-item-title {
+    margin-bottom: 23px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
-  .goods__text {
-    width: 230px;
-    margin-bottom: 25px;
+  .extras__goods-item-text {
+    width: 42%;
+    margin-bottom: 23px;
 
     font-size: 16px;
     line-height: 20px;
   }
 
-  .btn--goods {
+  .extras__goods-item-text-volume {
+    text-align: right;
+  }
+
+  .extras__goods-item-text-price {
+    width: 35%;
+  }
+
+  .extras__goods--btn {
     width: 633px;
   }
 
-  .gift {
-    margin-bottom: 76px;
-  }
-
-  .gift__wrap {
+  .extras__gift-wrap {
     flex-direction: row;
     flex-wrap: nowrap;
 
@@ -175,7 +218,7 @@
     }
   }
 
-  .gift__text {
+  .extras__gift-text {
     max-width: 161px;
     margin-left: auto;
     margin-top: 0;
@@ -185,8 +228,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extras--wrap {
+    margin-bottom: 86px;
+  }
+
   .extras__heading-wrap {
-    padding: 75px 0;
+    padding-top: 75px;
+  }
+
+  .extras__heading {
+    padding-left: 0;
+
+    &::before {
+      margin-right: 37px;
+    }
   }
 
   .extras__wrapper {
@@ -195,16 +250,17 @@
     flex-wrap: wrap;
   }
 
-  .goods {
+  .extras__goods {
     width: 895px;
+    margin-bottom: 0;
   }
 
-  .goods-list {
+  .extras__goods-list {
     width: 100%;
     margin-right: 80px;
   }
 
-  .goods-item {
+  .extras__goods-item {
     align-items: center;
     padding: 15.5px 0;
 
@@ -212,21 +268,26 @@
     border-right: none;
   }
 
-  .goods-title {
-    width: 245px;
+  .extras__goods-item-title {
+    width: 290px;
     margin-bottom: 0;
   }
 
-  .goods__text {
+  .extras__goods-item-text {
     width: 285px;
+    margin-top: 8px;
     margin-bottom: 0;
   }
 
-  .btn--goods {
+  .extras__goods-item-text-volume {
+    text-align-last: left;
+  }
+
+  .extras__goods--btn {
     width: 245px;
   }
 
-  .gift__wrap {
+  .extras__gift-wrap {
     flex-direction: column;
 
     padding: 65px 42px 42px;
@@ -238,7 +299,7 @@
     }
   }
 
-  .gift__text {
+  .extras__gift-text {
     padding-top: 61px;
 
     text-align: center;

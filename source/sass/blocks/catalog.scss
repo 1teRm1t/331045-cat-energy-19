@@ -30,29 +30,29 @@
   }
 }
 
-.product {
+.catalog__item-product {
   display: flex;
   flex-wrap: wrap;
 }
 
-.product__pic {
+.catalog__item-product-pic {
   display: block;
   width: 140px;
   height: 144px;
 }
 
-.product__desc {
+.catalog__item-product-desc {
   width: 140px;
   padding-top: 25px;
 }
 
-.product__title {
+.catalog__item-product-title {
   width: 75px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.product__link {
+.catalog__item-product-link {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -61,7 +61,7 @@
   color: $black-main;
 }
 
-.product__content {
+.catalog__item-product-content {
   width: 100%;
 
   font-family: "Arial", sans-serif;
@@ -71,17 +71,17 @@
   border-collapse: collapse;
 }
 
-.product__content-text {
+.catalog__item-product-content-text {
   text-align: right;
 }
 
-.product-more {
+.catalog__item-product-more {
   position: relative;
   padding: 80px 0 20px;
   text-align: center;
 }
 
-.product-more-icon {
+.catalog__item-product-more-icon {
   &::before {
     content: "";
     position: absolute;
@@ -108,7 +108,7 @@
   }
 }
 
-.product__title-more {
+.catalog__item-product-title-more {
   margin: 0;
   margin-bottom: 10px;
 
@@ -120,7 +120,7 @@
   color: $black-main;
 }
 
-.product__text {
+.catalog__item-product-text {
   margin-bottom: 20px;
 
   font-family: "Arial", sans-serif;
@@ -144,8 +144,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog__heading-wrap {
-    padding-top: 65px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 53px;
   }
 
   .catalog__heading {
@@ -177,12 +177,12 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   }
 
-  .product {
+  .catalog__item-product {
     flex-direction: column;
     align-items: center;
   }
 
-  .product__img {
+  .catalog__item-product-img {
     position: absolute;
     top: 0;
 
@@ -193,46 +193,46 @@
     }
   }
 
-  .product__pic {
+  .catalog__item-product-pic {
     width: 324px;
     height: auto;
   }
 
-  .product__desc {
+  .catalog__item-product-desc {
     width: 250px;
     padding-top: 0;
   }
 
-  .product__title {
+  .catalog__item-product-title {
     width: auto;
     max-width: 130px;
-    margin: 30px auto 20px;
+    margin: 27px auto 20px;
 
     text-align: center;
   }
 
-  .product__link {
+  .catalog__item-product-link {
     font-size: 20px;
   }
 
-  .product__content {
-    margin-bottom: 30px;
+  .catalog__item-product-content {
+    margin-bottom: 34px;
     font-size: 16px;
   }
 
-  .product__content tr {
+  .catalog__item-product-content tr {
     border-bottom: 1px solid #cdcdcd;
   }
 
-  .product__content td {
+  .catalog__item-product-content td {
     padding: 7px 0;
   }
 
-  .product-more {
-    padding: 170px 37px 40px;
+  .catalog__item-product-more {
+    padding: 163px 37px 44px;
   }
 
-  .product-more-icon {
+  .catalog__item-product-more-icon {
     &::before {
       top: 85px;
       left: 131px;
@@ -255,15 +255,15 @@
     }
   }
 
-  .product__title-more {
+  .catalog__item-product-title-more {
     width: 100%;
     max-width: 135px;
-    margin: 0 auto 25px;
+    margin: 0 auto 28px;
 
     font-size: 20px;
   }
 
-  .product__text {
+  .catalog__item-product-text {
     width: 100%;
     max-width: 170px;
     margin: 0 auto 85px;
@@ -286,14 +286,15 @@
   }
 
   .catalog__heading-wrap {
-    padding-top: 77px;
-    padding-bottom: 70px;
+    padding-top: 76px;
+    padding-bottom: 53px;
   }
 
   .catalog__item {
     width: 245px;
+    margin-top: 112px;
     margin-right: 80px;
-    margin-bottom: 140px;
+    margin-bottom: 30px;
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -303,7 +304,7 @@
       margin-bottom: 0;
     }
 
-    &:last-child {
+    &--more {
       width: 245px;
 
       background-color: transparent;
@@ -312,19 +313,35 @@
     }
   }
 
-  .product__pic {
+  .catalog__item-product-more {
+    padding: 163px 37px 40px;
+  }
+
+  .catalog__item-product-title-more {
+    margin: 0 auto 30px;
+  }
+
+  .catalog__item-product-text {
+    margin: 0 auto 87px;
+  }
+
+  .catalog__item-product-pic {
     width: 245px;
   }
 
-  .product__desc {
+  .catalog__item-product-desc {
     width: 169px;
+  }
+
+  .catalog__item-product-title {
+    margin: 27px auto 19px;
   }
 
   .btn--catalog {
     width: 169px;
   }
 
-  .product-more-icon::before {
+  .catalog__item-product-more-icon::before {
     left: 93px;
   }
 

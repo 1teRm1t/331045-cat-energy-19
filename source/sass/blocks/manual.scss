@@ -1,10 +1,13 @@
-.manual-wrap {
-  margin-bottom: 40px;
+.manual--wrap {
+  margin-bottom: 47px;
+}
+
+.manual__title-wrap {
+  padding-bottom: 31px;
 }
 
 .manual__title {
   margin: 0;
-  padding-bottom: 35px;
 
   font-size: 36px;
   line-height: 60px;
@@ -21,7 +24,7 @@
 .manual__item {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 80px;
 }
 
@@ -86,13 +89,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .manual-wrap {
+  .manual--wrap {
     margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  .manual__title-wrap {
+    padding-bottom: 40px;
   }
 
   .manual__title {
-    padding-bottom: 30px;
-
     font-size: 60px;
     line-height: 60px;
 
@@ -139,7 +145,7 @@
 
   .manual__text {
     max-width: 245px;
-    padding-top: 115px;
+    padding-top: 113px;
 
     font-size: 16px;
     line-height: 24px;
