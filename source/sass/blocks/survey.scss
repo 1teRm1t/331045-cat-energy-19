@@ -123,7 +123,12 @@
 
   fill: $black-lightly;
 
+  &--email {
+    top: 17px;
+  }
+
   &--phone {
+    top: 14px;
     right: 13px;
   }
 }
