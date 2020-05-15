@@ -5,10 +5,15 @@
   <meta charset="utf-8">
   <title>Кэт энерджи "Главная"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/slyle.min.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header page-header--backdrop">
     <div class="container container--burger">
       <div class="page-header__wrap">
@@ -50,16 +55,13 @@
           <p class="main-content__desc">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="main-content__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-            alt="Корм для кошек Cat Energy pro">
+          <img class="main-content__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм для кошек Cat Energy pro">
         </picture>
         <div class="main-content__link">
           <a class="btn btn--small" href="form.html">Подобрать программу</a>
@@ -72,7 +74,7 @@
           <div class="programs__item">
             <div class="programs__backdrop">
               <svg class="programs__icon--slim" width="35" height="49">
-                <use xlink:href="img/sprite.svg#icon-slim"></use>
+                <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
               </svg>
             </div>
             <h3 class="programs__title">Похудение</h3>
@@ -85,7 +87,7 @@
           <div class="programs__item">
             <div class="programs__backdrop">
               <svg class="programs__icon--pro" width="67" height="28">
-                <use xlink:href="img/sprite.svg#icon-pro"></use>
+                <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
               </svg>
             </div>
             <h3 class="programs__title">Набор массы</h3>
@@ -152,31 +154,24 @@
           </div>
 
           <div class="slider">
-            <input class="visually-hidden slider__toggle-before" type="radio" name="slider__toggle"
-              id="slider__toggle-before">
-            <input class="visually-hidden slider__toggle-after" type="radio" name="slider__toggle"
-              id="slider__toggle-after">
+            <input class="visually-hidden slider__toggle-before" type="radio" name="slider__toggle" id="slider__toggle-before">
+            <input class="visually-hidden slider__toggle-after" type="radio" name="slider__toggle" id="slider__toggle-after">
             <div class="slider__images">
               <div class="slider__image slider__images--before">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1300px)"
-                    srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1300px)"
-                    srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__pic" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение кота до">
                 </picture>
               </div>
               <div class="slider__image slider__images--after">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1300px)"
-                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
@@ -211,9 +206,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716187985!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589217004939!5m2!1sru!2sru"
-          allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716187985!3d59.938719169054046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589217004939!5m2!1sru!2sru" allowfullscreen=""></iframe>
       </div>
     </section>
   </main>
@@ -221,8 +214,8 @@
   <footer class="page-footer">
     <div class="page-footer__inner container">
       <div class="page-footer__logo-wrap">
-        <a class="page-footer__logo">
-          <img src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy">
         </a>
       </div>
 
@@ -267,7 +260,7 @@
 
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
   <script src="js/main.js"></script>
 
 </body>
