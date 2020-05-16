@@ -1,7 +1,3 @@
-.slider {
-  padding-bottom: 35px;
-}
-
 .slider__images {
   margin-bottom: 32px;
 }
@@ -76,8 +72,6 @@
 @media (min-width: $tablet-width) {
   .slider {
     position: relative;
-
-    padding-bottom: 67px;
   }
 
   .slider::after {

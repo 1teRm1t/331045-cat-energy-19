@@ -1,5 +1,5 @@
 .catalog__heading-wrap {
-  padding: 15px 20px 25px;
+  padding: 15px 20px 27px;
 }
 
 .catalog__heading {
@@ -20,7 +20,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   border-top: 1px solid #ededed;
 
@@ -44,13 +44,13 @@
 
 .catalog__item-product-desc {
   width: 140px;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .catalog__item-product-title {
   width: 75px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .catalog__item-product-link {
@@ -78,7 +78,7 @@
 
 .catalog__item-product-more {
   position: relative;
-  padding: 80px 0 20px;
+  padding: 80px 0 23px;
   text-align: center;
 }
 
@@ -111,7 +111,7 @@
 
 .catalog__item-product-title-more {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: -3px;
 
   font-size: 16px;
   line-height: 20px;
@@ -122,7 +122,7 @@
 }
 
 .catalog__item-product-text {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -145,15 +145,14 @@
 
 @media (max-width: $mobile-width-only) {
   .catalog {
-    width: auto;
+    width: 320px;
     padding: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .catalog__heading-wrap {
-    padding-top: 60px;
-    padding-bottom: 53px;
+    padding: 60px 0 53px;
   }
 
   .catalog__heading {
@@ -170,7 +169,7 @@
     position: relative;
 
     width: 324px;
-    margin-top: 110px;
+    margin-top: 109px;
     margin-bottom: 30px;
     padding: 136px 0 40px;
 
@@ -215,7 +214,7 @@
   .catalog__item-product-title {
     width: auto;
     max-width: 130px;
-    margin: 27px auto 20px;
+    margin: 28px auto 20px;
 
     text-align: center;
   }
@@ -238,7 +237,7 @@
   }
 
   .catalog__item-product-more {
-    padding: 163px 37px 44px;
+    padding: 163px 37px 41px;
   }
 
   .catalog__item-product-more-icon {
@@ -275,7 +274,7 @@
   .catalog__item-product-text {
     width: 100%;
     max-width: 170px;
-    margin: 0 auto 85px;
+    margin: 0 auto 88px;
 
     font-size: 16px;
   }
@@ -295,13 +294,12 @@
   }
 
   .catalog__heading-wrap {
-    padding-top: 76px;
-    padding-bottom: 53px;
+    padding: 76px 0 53px;
   }
 
   .catalog__item {
     width: 245px;
-    margin-top: 112px;
+    margin-top: 111px;
     margin-right: 80px;
     margin-bottom: 30px;
 

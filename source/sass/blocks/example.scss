@@ -2,6 +2,10 @@
   background-color: $grey-back;
 }
 
+.example--wrap {
+  padding-bottom: 35px;
+}
+
 .example__title-wrap {
   margin-bottom: 25px;
   padding-top: 15px;
@@ -95,8 +99,12 @@
     border-top: 1px solid #d9d9d9;
   }
 
+  .example--wrap {
+    padding-bottom: 67px;
+  }
+
   .example__title-wrap {
-    margin-bottom: 65px;
+    margin-bottom: 62px;
     padding-top: 45px;
   }
 
@@ -179,6 +187,10 @@
   .example {
     background-color: #eaeaea;
     border-top: none;
+  }
+
+  .example--wrap {
+    padding-bottom: 5px;
   }
 
   .example__title-wrap {
