@@ -185,7 +185,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: #eaeaea;
+    background-color: $grey-back;
     border-top: none;
   }
 
@@ -253,7 +253,7 @@
 
   .example__result-number,
   .example__result-text {
-    background-color: #eaeaea;
+    background-color: $grey-back;
   }
 
   .example__result-cost {

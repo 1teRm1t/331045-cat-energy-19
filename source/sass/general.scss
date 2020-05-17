@@ -24,6 +24,12 @@
   overflow: hidden;
 }
 
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 708px;

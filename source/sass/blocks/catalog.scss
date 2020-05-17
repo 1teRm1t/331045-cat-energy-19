@@ -178,10 +178,11 @@
   }
 
   .catalog__item--more {
+    width: 322px;
     padding: 0;
 
     background-color: transparent;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   .catalog__item-product {
@@ -237,7 +238,7 @@
   }
 
   .catalog__item-product-more {
-    padding: 163px 37px 41px;
+    padding: 163px 37px 40px;
   }
 
   .catalog__item-product-more-icon {
@@ -312,16 +313,12 @@
     }
 
     &--more {
-      width: 245px;
-
-      background-color: transparent;
-      border-bottom: none;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      width: 243px;
     }
   }
 
   .catalog__item-product-more {
-    padding: 163px 37px 40px;
+    padding: 162px 37px 40px;
   }
 
   .catalog__item-product-title-more {
